@@ -82,8 +82,8 @@ def circle_move():
 
 
 while True:
-    # rectangle_move()
-    # triangle_move()
+    rectangle_move()
+    triangle_move()
     circle_move()
 
 
