@@ -73,12 +73,17 @@ def triangle_move():
 
 
 def circle_move():
+    r = 250
+    for deg in range(0, 360, 10):
+        x = r * math.cos(math.radians(deg)) + 400
+        y = r * math.sin(math.radians(deg)) + 300
+        boys_move(x, y)
     pass
 
 
 while True:
     # rectangle_move()
-    triangle_move()
+    # triangle_move()
     circle_move()
 
 
