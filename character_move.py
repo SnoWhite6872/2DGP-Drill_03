@@ -6,29 +6,35 @@ open_canvas()
 boy = load_image('character.png')
 
 
-def top_move():
+def bottom_move():
     for x in range(20, 780, 10):
         boys_move(x, 50)
     pass
 
 
 def right_move():
+    for y in range(50,550,10):
+        boys_move(780, y)
     pass
 
 
-def bottom_move():
+def top_move():
+    for x in range(780,20,-10):
+        boys_move(x, 550)
     pass
 
 
 def left_move():
+    for y in range(550,50,-10):
+        boys_move(20, y)
     pass
 
 
 def rectangle_move():
 
-    top_move()
-    right_move()
     bottom_move()
+    right_move()
+    top_move()
     left_move()
     pass
 
