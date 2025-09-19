@@ -45,7 +45,19 @@ def boys_move(x: float, y: float):
     delay(0.1)
 
 
+def upslash_move():
+    pass
+
+
+
+def downslash_move():
+    pass
+
+
 def triangle_move():
+    bottom_move()
+    upslash_move()
+    downslash_move()
     pass
 
 
