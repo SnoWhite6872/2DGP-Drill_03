@@ -7,6 +7,8 @@ boy = load_image('character.png')
 
 
 def top_move():
+    for x in range(20, 780, 10):
+        boys_move(x, 50)
     pass
 
 
@@ -23,15 +25,18 @@ def left_move():
 
 
 def rectangle_move():
-    clear_canvas()
+
     top_move()
     right_move()
     bottom_move()
     left_move()
-
-    boy.draw_now(400, 300)
-    delay(0.1)
     pass
+
+
+def boys_move(x: float, y: float):
+    clear_canvas()
+    boy.draw_now(x, y)
+    delay(0.1)
 
 
 def triangle_move():
