@@ -46,11 +46,22 @@ def boys_move(x: float, y: float):
 
 
 def upslash_move():
+    x = 780
+    y = 50
+    while (x >400 and y<430):
+        boys_move(x, y)
+        x -= 10
+        y += 10
+
     pass
 
-
-
 def downslash_move():
+    x = 400
+    y = 430
+    while (x > 20 and y > 50):
+        boys_move(x, y)
+        x -= 10
+        y -= 10
     pass
 
 
@@ -66,7 +77,7 @@ def circle_move():
 
 
 while True:
-    rectangle_move()
+    # rectangle_move()
     triangle_move()
     circle_move()
 
